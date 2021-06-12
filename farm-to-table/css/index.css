@@ -13,6 +13,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -21,6 +22,9 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
+}
+body {
+	line-height: 1;
 }
 ol, ul {
 	list-style: none;
@@ -37,101 +41,100 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* general Brit Hemming Styles */
+
 *{
     box-sizing: border-box;
-    margin:0;
     padding:0;
-    max-width:100%;
-    border:1px solid grey;
+    margin: 0;
+    max-width: 100%;
+    border: 1px solid grey;
 }
-/*General Styles*/
+
 html{
-    font-size:62.5%;
+    font-size: 62.5%;
 }
 body{
-    font-size:1.8rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
     color:#4f4f4f;
-    line-height:1.5;
-    font-family: 'PT Sans', sans-serif;
-    background-color:#FFFAFA;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #FFFAFAF;
 }
-h1, h2, h3{
-    font-family: 'Nunito', sans-serif;
-    text-align:center;
+h1, h2, h3 {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 6rem;
+    text-align: center;
 }
 h1{
-    font-size:5rem;
+    font-size: 5rem;
 }
 h2{
-    font-size:3.5rem;
+    font-size: 3.5rem;
 }
 h3{
-    font-size:2.5rem;
+    font-size: 3.5rem;
 }
 section{
-    padding:4% 0;
+    padding: 4% 0;
+    width: 90%;
+    margin: 0 auto;
 }
 a{
-    text-decoration:none;
-    color:#4f4f4f;
+    text-decoration: none;
+    color: #4f4f4f
 }
-/*Header Section Styles*/
+/* Header */
 nav{
-    display:flex;
+    
+    display: flex;
     justify-content: space-between;
-    align-items:center;
-}
-.logo{
-    width:10%;
-    display:flex;
-    justify-content: center;
     align-items: center;
 }
-.logo img{
-    width:50%;
+.logo{
+    width: 10%;
 }
 .link{
     width:60%;
-    display:flex;
+    display: flex;
     justify-content: space-evenly;
 }
-/*Top Section Styles*/
+/* top */
 #top{
-    height:90vh;
-    background-image:url('../images/header.jpg');
+    height: 90vh;
+    background-image: url('../images/header.jpg');
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center;
     background-size: cover;
-    display:flex;
+    display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
+
 }
-/*Farm styles*/
+/* farm styles */
 .container{
-    display:flex;
+    display: flex;
     justify-content: space-around;
+
 }
 .box{
-    border: 3px solid grey;
-    padding:4%;
-    width:20%;
-    margin:4% 0;
-    background-color:#fff;
+    border: 3px solid gray;
+    padding: 4%;
+    width: 20%;
+    margin: 4% 0;
 }
-/*empty section*/ 
+
+/* empty section */
 .hero-img{
     background-image: url('../images/dirt.jpg');
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-position:center;
-    height:40vh;
+    background-attachment: fixed;
+    background-position: center;
+    height: 40vh;
+
 }
-/*About Section*/
 .text{
-    width:80%;
-    border:3px solid grey;
-    background-color: #fff;
-    padding:4%;
-    margin:0 auto;
+    
 }
